@@ -1,0 +1,7 @@
+overwrite: true
+schema: 'prisma/schema.prisma' # The path to your GraphQL schema file
+documents: 'src/**/*.graphql' # The path to your GraphQL type definitions
+generates:
+  src/schema.gql:
+    plugins:
+      - 'schema-ast'
